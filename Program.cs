@@ -13,8 +13,7 @@
 */
 using static System.Console;
 
-string[] stringArray = { "Hello", "    ", "world", "2", ":-)", "1234", "1567", "-2", "computer science", "Russia", "Denmark", "Kazan" };
-
+string[] stringArray = { "Hi", "   ", "world", "2", ":-)", "1234", "1567", "-2", "computer science", "Russia", "Denmark", "Kazan" };
 void PrintStringArr(string[] stringArray)
 {
     Write("[");
@@ -28,7 +27,6 @@ void PrintStringArr(string[] stringArray)
     }
     Write("]");
 }
-
 int SearchArrayLengthMin3(string[] stringArray)
 {
     int numberOfString = 0;
@@ -41,7 +39,6 @@ int SearchArrayLengthMin3(string[] stringArray)
     }
     return numberOfString;
 }
-
 string[] CreateArrayLengthMin3(string[] stringArray, int sizeNewArray)
 {
     string[] newStringArray = new string[sizeNewArray];
@@ -60,5 +57,5 @@ string[] CreateArrayLengthMin3(string[] stringArray, int sizeNewArray)
 PrintStringArr(stringArray);
 int sizeNewArray = SearchArrayLengthMin3(stringArray);
 string[] newStringArray = CreateArrayLengthMin3(stringArray, sizeNewArray);
-Write(" --> ");
+Write(" -> ");
 PrintStringArr(newStringArray);
