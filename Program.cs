@@ -22,7 +22,22 @@ void PrintStringArr(string[] stringArray)
     }
     Write("]");
 }
+int CreateArrayLengthMin3 (string[] stringArray)
+{
+    int numberOfString = 0;
+    for (int i = 0; i < stringArray.Length; i++)
+    {
+        if (stringArray[i].Length < 4)
+        {
+            numberOfString++;
+
+        }
+    }
+    return numberOfString;
+}
+
+
 
 string[] stringArray = { "Hello", "world", "2", ":-)", "1234", "1567", "-2", "computer science", "Russia", "Denmark", "Kazan" };
 PrintStringArr ( stringArray);
-
+WriteLine(CreateArrayLengthMin3(stringArray));
