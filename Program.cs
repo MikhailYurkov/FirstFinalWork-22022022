@@ -25,3 +25,4 @@ void PrintStringArr(string[] stringArray)
 
 string[] stringArray = { "Hello", "world", "2", ":-)", "1234", "1567", "-2", "computer science", "Russia", "Denmark", "Kazan" };
 PrintStringArr ( stringArray);
+
